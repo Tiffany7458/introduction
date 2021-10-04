@@ -1,5 +1,10 @@
 # Quiz Creation Activity
 
+import time
+from rich import print
+
+
+
 # Quiz has five questions the user will answer.
 # It will keep track of score and give
 # a final result
@@ -47,10 +52,23 @@ elif score == 1:
 else:
     print("Come on...You need to prepare more")
 
-#For each question, print it out and ask the user to
-for question in questions
+
+questions = [
+    ["What is the colour of the [bold italic red]sun[/bold italic red]?","yellow"]
+]
+
+# For each question, print it out and ask the user to answer
+for question in questions:
     print(question[0])
 
+    # Get the user's name
+    user_answer = input ().lower().strip(",..?!")
 
-    user_answer = input ().lower().
+    # See if they're correct
+    if user_answer == question[1]:
+        print("You got it right!")
+    else:
+        print("Sowwwwwie...You dead")
+
+
 
